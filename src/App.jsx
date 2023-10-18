@@ -57,9 +57,10 @@ function App() {
 
   return (
     <>
-      <h1>Acerte a palavra</h1>
+      <h2>Acerte a palavra</h2>
       <h3>A palavra tem {palavraEscolhida?.length} letras</h3>
       <div className="card">
+        <div className='card-input'>
         <input value={palavraDigitada} onChange={onChangePalavraDigitada}/>
         <button onClick={checaPalavraDigitada}>
           checar
@@ -67,6 +68,7 @@ function App() {
         <button onClick={escolheNovaPalavra}>
           nova palavra
         </button>
+        </div>
         <p>
           {
             palavraTentativa?.split("").map((letra, posicao) => {

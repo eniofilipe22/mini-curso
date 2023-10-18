@@ -1,43 +1,32 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container {
+  padding: 2em;
+  margin-bottom: 60px;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 .card {
   padding: 2em;
 }
 
+.card-input {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .read-the-docs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
   color: #888;
 }
 
@@ -49,4 +38,14 @@
 .letra-incorreta {
   color: red;
   margin-right: 5px;
+}
+
+@media (max-width: 420px){
+  .card-input {
+    flex-direction: column;
+  }
+
+  input {
+    height: 30px;
+  }
 }
