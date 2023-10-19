@@ -21,7 +21,7 @@ const Content = () => {
         let posicaoAleatoria
         let palavraAleatoria
         do {
-            posicaoAleatoria = Math.floor(Math.random() * 500)
+            posicaoAleatoria = Math.floor(Math.random() * 164)
             palavraAleatoria = palavras.palavras[posicaoAleatoria]
             palavraJaFoiEscolhida = palavrasEscolhidas.includes(palavraAleatoria)
         } while (palavraJaFoiEscolhida)
