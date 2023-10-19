@@ -6,9 +6,9 @@ import "./App.css"
 const App = () => {
   return (
     <>
-      <Header />
+      <Header title="Qual é a Palavra?"/>
       <Content />
-      <Footer />
+      <Footer link="http://github.com" mensagem="Copyright © 2023 Ênio Filipe e Lorena Avelino" />
     </>
   )
 }
