@@ -1,51 +1,9 @@
 #root {
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
-}
-
-.container {
-  padding: 2em;
-  margin-bottom: 60px;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  height: 100%;
   min-height: 100vh;
-}
-
-.card {
-  padding: 2em;
-}
-
-.card-input {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: column;  
 }
 
-.read-the-docs {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  color: #888;
-}
-
-.letra-correta {
-  color: green;
-  margin-right: 5px;
-}
-
-.letra-incorreta {
-  color: red;
-  margin-right: 5px;
-}
-
-@media (max-width: 420px){
-  .card-input {
-    flex-direction: column;
-  }
-
-  input {
-    height: 30px;
-  }
-}
